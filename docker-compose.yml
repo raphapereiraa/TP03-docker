@@ -1,0 +1,13 @@
+services:
+  site:
+    build: .
+    container_name: meu_site
+    ports:
+      - "8080:80"
+
+  app2:
+    image: httpd:alpine
+    container_name: segundo_app
+    ports:
+      - "8081:80"
+      
